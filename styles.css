@@ -16,7 +16,7 @@ header {
     position: relative;
     justify-content: space-around;
     align-items: center;
-    width: 30vw;
+    width: 35vw;
     margin-left: 18%;
 }
 .menu-image a{
@@ -47,6 +47,8 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column-reverse;
 }
 .slideshow-box {
     position: relative;
@@ -60,8 +62,9 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center; 
+    order: 1;
     /* margin-top: 40%; */
 }
 .slideshow-list-on-right {
@@ -72,13 +75,15 @@ header {
     color: white;
     height: 68px;
     width: 100%;
-    opacity: 97%;
-    margin-top: 31%;
+    opacity: 95%;
+    /* margin-top: 31%; */
 }
 .slideshow-list-on-right ol{
     font-size: .70em;
     width: 16vw;
-    margin-bottom: 10px;
-    margin-right: 7px;
+    margin-bottom: .5px;
+    margin-right: .3px;
+    border: 1px solid black;
+    padding: 27px;
 }
 
