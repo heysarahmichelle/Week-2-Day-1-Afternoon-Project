@@ -1,104 +1,84 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-nav {
-    position: absolute;
-    top: 0px;
+
+* {margin: 0}
+
+header {
+    display: flex;
+    background-color: black;
     width: 100%;
-    height: 75px;
-    background-color: black;
+    height: 8vh;
+    position: sticky;
+    justify-content: space-evenly;
     color: white;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    /* align-content: space-between; */
 }
-/* .img {
-    position: absolute;
-     */
-/* }
-.second {
+.menu-image {
+    display: flex;
     position: relative;
-    margin-right: 20px;
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
+    justify-content: space-around;
     align-items: center;
-} */
-.information-links {
-    position: absolute;
+    width: 30vw;
+    margin-left: 18%;
+}
+.menu-image a{
+    text-decoration: none;
+    font-size: .95em;
+    color: white;
+}
+.menu-image img{
+    margin-bottom: 5px;
+}
+.menu-about {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
-   ÷
+    width: 18vw;
+    margin-right: 18%;
 }
-body {
-    font-size: 14px;
-    line-height: 16px;
-    font-family: 'Brandon Grotesque','brandon-grotesque', 'Helvetica', 'sans-serif';
-    font-weight: normal;
+.menu-about a{
+    text-decoration: none;
+    font-size: .80em;
+    color: #8b939b;
 }
-.information-links {
-    position: absolute
-    display: flex;
-    justify-content: flex-end;
+.image {
+    width: 100%;
+    height: 750px;
+    /* background-size: auto 100%; */
+    background-image: url('https://www.spacex.com/sites/spacex/files/ppf_slc-40_2020_02_17_img_0375.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.logo {
-    height: 50px;
-    width: 100px;
+.slideshow-box {
+    position: relative;
 }
-.social-media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.slideshow-box-words-left {
     background-color: black;
+    opacity: 70%;
+    width: 100%;
+    height: 90px;
     color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center; 
+    /* margin-top: 40%; */
 }
-.color {
+.slideshow-list-on-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #21282c;
     color: white;
+    height: 68px;
+    width: 100%;
+    opacity: 97%;
+    margin-top: 31%;
 }
+.slideshow-list-on-right ol{
+    font-size: .70em;
+    width: 16vw;
+    margin-bottom: 10px;
+    margin-right: 7px;
+}
+
